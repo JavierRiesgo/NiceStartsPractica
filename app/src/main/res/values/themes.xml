@@ -1,9 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.NiceStart" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.NiceStart2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowIsTranslucent">true</item> <!--Para que desaparezca el inicio de secion con la app y entre directamente al splash-->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="Theme.NiceStart" parent="Base.Theme.NiceStart" />
+    <style name="Theme.NiceStart2" parent="Base.Theme.NiceStart2" />
+
+    <style name="Base.Theme.NiceStart2.ActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Cambia el color de fondo de la Toolbar -->
+        <item name="colorPrimary">@color/blue</item>
+        <!-- Cambia el color del texto de la Toolbar -->
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
 </resources>
