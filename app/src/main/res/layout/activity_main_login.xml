@@ -5,26 +5,27 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SingUp">
-
+    tools:context=".MainLogin">
 
     <!-- alpha controla la opacidad del fondo -->
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0.9"
-        android:background="@drawable/gradient"
+        android:alpha="0.6"
+        android:background="@color/colorBar"
         />
+    <!--imagen de fondo -->
     <ImageView
         android:id="@+id/girl"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitStart"
-        android:src="@drawable/man"
-        android:alpha="1"
+        android:src="@drawable/girl"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+
+
     <!--logo-->
     <ImageView
         android:id="@+id/logo"
@@ -73,7 +74,6 @@
             android:background="@color/white"
             android:alpha="0.6"
             android:hint="@string/user"
-
             />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -100,41 +100,20 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/fiel3"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/button1"
+        android:onClick="openMainActivity"
+        android:text="Login"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/fiel2"
-        app:startIconDrawable="@drawable/mail"
-        >
-
-        <EditText
-            android:id="@+id/mail"
-            android:layout_height="wrap_content"
-            android:layout_width="248dp"
-            android:background="@color/white"
-            android:alpha="0.6"
-            android:hint="e-mail"
-
-
-            />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <Button
-        android:id="@+id/button1"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="@id/guideline2"
-        app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/fiel3"
 
         style="@style/Button1Style" />
 
     <Button
         android:id="@+id/button2"
         android:onClick="openSignup"
-        android:text="Cancel"
+        android:text="Signup"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/button1"
