@@ -50,3 +50,6 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.15.1") // Última versión de Glide
     annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1") // Procesador de anotaciones para Java
 }
+dependencies {
+    implementation ("com.airbnb.android:lottie:5.0.3")  // Verifica la última versión disponible
+}
