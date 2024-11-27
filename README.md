@@ -41,7 +41,6 @@ El **LoginActivity** permite al usuario iniciar sesión con un diseño moderno y
     - El botón "Sign Up" redirige al **SignupActivity**.
 
 ### **Captura de pantalla**
-![LoginActivity](img/ActivityLogin.png)
 
 ---
 
@@ -57,7 +56,6 @@ La **SignupActivity** utiliza un diseño similar al del **LoginActivity**, con p
     - "Cancelar" para volver al **LoginActivity**.
 
 ### **Captura de pantalla**
-![SignupActivity](img/ActiitySignup.png)
 
 ---
 
@@ -84,7 +82,6 @@ El **MainActivity** es la pantalla principal de la aplicación, diseñada para o
 - **SwipeRefreshLayout:** Permite al usuario actualizar el contenido del WebView deslizando hacia abajo.
 
 ### **Gif de WebView y SwipeRefreshLayout**
-![MainActivity - WebView](gif/mainrefresh.gif)
 
 ---
 
