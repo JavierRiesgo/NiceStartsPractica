@@ -105,6 +105,5 @@ public class MainActivityToolBar extends AppCompatActivity {
     public void onClick(View view){
         Intent intent = new Intent(this, MainVista.class);
         startActivity(intent);
-
     }
 }

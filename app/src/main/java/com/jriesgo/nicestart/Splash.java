@@ -25,24 +25,24 @@ public class Splash extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
-        // Llama al método para abrir la aplicación
-        openApp();
+            // Llama al método para abrir la aplicación
+            openApp();
 
 
-        //animacion
-        logo = findViewById(R.id.logosplash);
+            //animacion
+            logo = findViewById(R.id.logosplash);
 
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.translacion);
+            Animation myanim = AnimationUtils.loadAnimation(this, R.anim.translacion);
 
-        logo.startAnimation(myanim);
+            logo.startAnimation(myanim);
 
-        //Fondo ola
-        ola = findViewById(R.id.imagenola);
-        Glide.with(this)
-                .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
-                .transition(DrawableTransitionOptions.withCrossFade(600))
-                .centerCrop()
-                .into(ola);
+            //Fondo ola
+            ola = findViewById(R.id.imagenola);
+            Glide.with(this)
+                    .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
+                    .transition(DrawableTransitionOptions.withCrossFade(600))
+                    .centerCrop()
+                    .into(ola);
 
         // Ajustar insets del sistema
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

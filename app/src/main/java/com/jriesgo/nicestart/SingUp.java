@@ -27,7 +27,7 @@ public class SingUp extends AppCompatActivity {
             Intent intent = new Intent(SingUp.this, MainLogin.class);
             startActivity(intent);
         });
-        btnRegistrar.setOnClickListener(v -> {
+        btnOpen.setOnClickListener(v -> {
             Intent intent = new Intent(SingUp.this, MainVista.class);
             startActivity(intent);
         });
