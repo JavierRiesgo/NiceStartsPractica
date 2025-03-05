@@ -25,7 +25,7 @@
             android:name=".MainLogin"
             android:exported="false" />
         <activity
-            android:name=".SingUp"
+            android:name=".SignUp"
             android:exported="false" />
         <activity
             android:name=".Splash"

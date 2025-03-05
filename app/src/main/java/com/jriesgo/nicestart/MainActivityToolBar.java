@@ -1,8 +1,7 @@
 package com.jriesgo.nicestart;
 
-import android.os.Bundle;
-
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -21,7 +20,9 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivityToolBar extends AppCompatActivity {
+
     private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +45,7 @@ public class MainActivityToolBar extends AppCompatActivity {
             return insets;
         });
     }
+
     // Declarar e inflar el menú de opciones del Toolbar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -73,7 +75,7 @@ public class MainActivityToolBar extends AppCompatActivity {
         } else if (id == R.id.profile) {
             startActivity(new Intent(this, Profile.class));
         } else if (id == R.id.signup) {
-            startActivity(new Intent(this, SingUp.class));
+            startActivity(new Intent(this, SignUp.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -105,5 +107,7 @@ public class MainActivityToolBar extends AppCompatActivity {
     public void onClick(View view){
         Intent intent = new Intent(this, MainVista.class);
         startActivity(intent);
+
     }
+
 }

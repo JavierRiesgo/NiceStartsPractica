@@ -10,7 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class SingUp extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
     public Button btnRegistrar;
     public Button btnOpen;
     @Override
@@ -24,11 +24,11 @@ public class SingUp extends AppCompatActivity {
         btnOpen = findViewById(R.id.button2);
 
         btnRegistrar.setOnClickListener(v ->{
-            Intent intent = new Intent(SingUp.this, MainLogin.class);
+            Intent intent = new Intent(SignUp.this, MainLogin.class);
             startActivity(intent);
         });
         btnOpen.setOnClickListener(v -> {
-            Intent intent = new Intent(SingUp.this, MainVista.class);
+            Intent intent = new Intent(SignUp.this, MainVista.class);
             startActivity(intent);
         });
 

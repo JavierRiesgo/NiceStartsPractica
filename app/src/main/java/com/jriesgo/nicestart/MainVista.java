@@ -181,7 +181,7 @@ public class MainVista extends AppCompatActivity {
             Intent intent = new Intent(this, Profile.class);
             startActivity(intent);
         }else if(id == R.id.signup) {
-            Intent intent = new Intent(this, SingUp.class);
+            Intent intent = new Intent(this, SignUp.class);
             startActivity(intent);
         } else if (id == R.id.logout) {
             showAlertDialogButtonClicked(MainVista.this); //llamada al dialogo alert
