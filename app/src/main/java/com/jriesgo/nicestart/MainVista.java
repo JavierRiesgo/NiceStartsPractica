@@ -1,5 +1,6 @@
 package com.jriesgo.nicestart;
 
+
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -26,11 +28,11 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainVista extends AppCompatActivity {
 
+
     private TextView mycontext;
     //para el swipe
     private SwipeRefreshLayout swipeLayout;
     private WebView miVisorWeb;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,12 +56,15 @@ public class MainVista extends AppCompatActivity {
         webSettings.setUseWideViewPort(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
+
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.myMainConstraint), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
     }
+
     //esta siendo llamado en los itemns del menu desplegable
     public void showAlertDialogButtonClicked(MainVista mainActivity) {
 
@@ -92,6 +97,8 @@ public class MainVista extends AppCompatActivity {
         dialog.show();
     }
 
+
+
     //funcionalidad del swipe
     protected SwipeRefreshLayout.OnRefreshListener
             mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
@@ -111,7 +118,7 @@ public class MainVista extends AppCompatActivity {
 
     //menu desplegable
     @Override
-    public void onCreateContextMenu(ContextMenu menu, View view, ContextMenu.ContextMenuInfo menuInfo){
+    public void onCreateContextMenu(ContextMenu menu, View view,ContextMenu.ContextMenuInfo menuInfo){
         getMenuInflater().inflate(R.menu.menu_context, menu);
     }
 
@@ -192,4 +199,24 @@ public class MainVista extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /* poer otra forma en vez del Toast
+    public void onRefresh(){
+        final ConstraintLayout mLayout = findViewById(R.id.myMainConstraint);
+
+        Snackbar snackbar = Snackbar
+                .make(mLayout, "Fancy a snack while you refresh?", Snackbar.LENGTH_SHORT)
+                .setAction("Undo", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
+                        snackbar1.show();
+                    }
+                });
+    }
+
+     */
+
+
+
 }
