@@ -134,21 +134,6 @@ public class MainVista extends AppCompatActivity {
             Toast.makeText(this, "Dowloading Item...", Toast.LENGTH_SHORT).show();
             return true;
         }
-
-    /*
-        switch (item.getItemId()){
-            case R.id.item1:
-                Toast.makeText(this, "Item copied", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.item2:
-                Toast.makeText(this, "Dowloading Item...", Toast.LENGTH_SHORT).show();
-                return true;
-
-            default:
-                return false;
-        }
-    */
         return false;
     }
 
@@ -165,8 +150,6 @@ public class MainVista extends AppCompatActivity {
         int id = item.getItemId();
 
         if(id == R.id.item4){
-            // Toast.makeText(this, "Infecting", Toast.LENGTH_SHORT).show();
-
             final ConstraintLayout mLayout = findViewById(R.id.myMainConstraint);
 
             Snackbar snackbar = Snackbar
@@ -195,27 +178,19 @@ public class MainVista extends AppCompatActivity {
         }else if(id == R.id.item3){
             Intent intent = new Intent(this, MainActivityToolBar.class);
             startActivity(intent);
+        }else if(id == R.id.navigation_home){
+            Intent intent = new Intent(this, MainActivityToolBar.class);
+            startActivity(intent);
+        }else if(id == R.id.navigation_search){
+            Intent intent = new Intent(this, MainActivityToolBar.class);
+            startActivity(intent);
+        } else if (id == R.id.navigation_profile) {
+            Intent intent = new Intent(this, Profile.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);
     }
-
-    /* poer otra forma en vez del Toast
-    public void onRefresh(){
-        final ConstraintLayout mLayout = findViewById(R.id.myMainConstraint);
-
-        Snackbar snackbar = Snackbar
-                .make(mLayout, "Fancy a snack while you refresh?", Snackbar.LENGTH_SHORT)
-                .setAction("Undo", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
-                        snackbar1.show();
-                    }
-                });
-    }
-
-     */
 
 
 

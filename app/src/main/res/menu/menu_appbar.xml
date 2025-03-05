@@ -2,6 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+
     <!-- Item para la acción que aparece en el Toolbar -->
     <item
         android:id="@+id/item4"
@@ -13,7 +14,7 @@
     <item
         android:id="@+id/puntitos"
         android:title="Nice"
-        android:icon="@drawable/usericon"
+        android:icon="@drawable/ic_planet"
         app:showAsAction="ifRoom" >
 
         <menu>
@@ -44,6 +45,24 @@
                 android:icon="@drawable/logout"
                 app:showAsAction="never"
                 />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/user_toolbar"
+        android:title="Copy"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/usericon"
+        >
+        <menu>
+            <item
+                android:id="@+id/navigation_home"
+                android:title="Home" />
+            <item
+                android:id="@+id/navigation_search"
+                android:title="Search" />
+            <item
+                android:id="@+id/navigation_profile"
+                android:title="Profile" />
         </menu>
     </item>
 
