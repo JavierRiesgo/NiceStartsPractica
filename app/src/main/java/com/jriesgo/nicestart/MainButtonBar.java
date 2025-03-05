@@ -2,6 +2,11 @@
 package com.jriesgo.nicestart;
 
 import android.os.Bundle;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.tabs.TabLayout;
+import com.jriesgo.nicestart.main.HelpSectionsPagerAdapter;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.ViewCompat;
@@ -18,8 +23,26 @@ public class MainButtonBar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_button_bar);
 
+        // Configurar Toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(true);
+        }
+
+        // Configurar ViewPager y TabLayout
+        ViewPager viewPager = findViewById(R.id.view_pager);
+        HelpSectionsPagerAdapter adapter = new HelpSectionsPagerAdapter(this, getSupportFragmentManager());
+        viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        tabLayout.setupWithViewPager(viewPager);
+
+        // Configurar navegación inferior
         setupNavigation();
 
+        // Manejar insets (espaciado para barras del sistema)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             v.setPadding(
                     insets.getInsets(WindowInsetsCompat.Type.systemBars()).left,
@@ -30,6 +53,7 @@ public class MainButtonBar extends AppCompatActivity {
             return insets;
         });
     }
+
 
     private void setupNavigation() {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_barbottomnavigation);

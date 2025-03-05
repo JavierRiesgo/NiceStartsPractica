@@ -11,6 +11,7 @@ import com.jriesgo.nicestart.R;
 
 
 
+
 public class FragmentSettings extends Fragment {
 
 

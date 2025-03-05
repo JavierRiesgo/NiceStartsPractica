@@ -56,8 +56,6 @@ public class MainVista extends AppCompatActivity {
         webSettings.setUseWideViewPort(true);
         miVisorWeb.loadUrl("https://thispersondoesnotexist.com");
 
-
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.myMainConstraint), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
