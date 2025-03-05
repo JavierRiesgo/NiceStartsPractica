@@ -76,7 +76,17 @@ public class MainActivityToolBar extends AppCompatActivity {
             startActivity(new Intent(this, Profile.class));
         } else if (id == R.id.signup) {
             startActivity(new Intent(this, SignUp.class));
-        }
+        }else if(id == R.id.navigation_home){
+        Intent intent = new Intent(this, MainButtonBar.class);
+            startActivity(intent);
+        }else if(id == R.id.navigation_search){
+            Intent intent = new Intent(this, MainBab.class);
+            startActivity(intent);
+        } else if (id == R.id.navigation_profile) {
+            Intent intent = new Intent(this, Profile.class);
+            startActivity(intent);
+    }
+
 
         return super.onOptionsItemSelected(item);
     }

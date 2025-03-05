@@ -179,7 +179,7 @@ public class MainVista extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivityToolBar.class);
             startActivity(intent);
         }else if(id == R.id.navigation_home){
-            Intent intent = new Intent(this, MainActivityToolBar.class);
+            Intent intent = new Intent(this, MainButtonBar.class);
             startActivity(intent);
         }else if(id == R.id.navigation_search){
             Intent intent = new Intent(this, MainActivityToolBar.class);
