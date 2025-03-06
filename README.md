@@ -73,7 +73,7 @@ El **MainVista** es la pantalla principal de la aplicación, diseñada para ofre
 ### **Contenido principal**
 - **WebView:** Carga imágenes desde Internet.
 - **SwipeRefreshLayout:** Permite al usuario actualizar el contenido del WebView deslizando hacia abajo.
-- [navegacion.mp4](gif%2Fnavegacion.mp4)
+- ![BarraDeArribaMain.gif](gif%2FBarraDeArribaMain.gif)
 ---
 
 ## **MainButtonBar**
@@ -114,7 +114,7 @@ El **FragmentSettings** permite modificar ajustes de la aplicación.
 ### **Características**
 - Opciones para personalizar la experiencia del usuario.
 - Configuración de notificaciones y preferencias.
-[opcionesNAv.mp4](gif%2FopcionesNAv.mp4)
+  ![navOpciones.gif](gif%2FnavOpciones.gif)
 ---
 
 ## **MainActivityToolBar**
@@ -125,7 +125,7 @@ El **MainActivityToolBar** es una variante de la pantalla principal con un dise�
 - **Animaciones de Lottie** en la barra de herramientas.
 - **Menú contextual** con accesos rápidos.
 - **SnackBar** y **AlertDialog** para interacción con el usuario.
-[toolBar.mp4](gif%2FtoolBar.mp4)
+![toolBar.gif](..%2F..%2F..%2F..%2F..%2FDownloads%2FtoolBar.gif)
 ---
 
 ### **Mensaje de Alerta**
@@ -141,7 +141,8 @@ El **MainBab** es otra alternativa de la pantalla principal con un diseño y est
 ### **Características**
 - Implementación única del diseño de navegación.
 - Experiencia de usuario mejorada con transiciones suaves.
-[mainBab.mp4](gif%2FmainBab.mp4)
+- Barra en buttom, con menu burguer
+![MainBab.gif](gif%2FMainBab.gif)
 ---
 
 ## **Profile**
@@ -161,7 +162,7 @@ El **Profile** cuenta con una imagen de forma circular y cargada desde un **Glid
 - **MainVista:**
     - Opción de cerrar sesión → MainLogin.
 - **MainButtonBar**: Permite cambiar entre **FragmentInicio, FragmentFavoritos y FragmentSettings**.
-[navegacion.mp4](gif%2Fnavegacion.mp4)
+![navegacion.gif](gif%2Fnavegacion.gif)
 ---
 
 ## **Vista general de funcionalidades**
