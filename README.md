@@ -25,7 +25,7 @@ Esta animación, creada en XML, despliega un movimiento suave que presenta el lo
 - **Tipo de animación:** Translación desde el centro de la pantalla a la derecha.
 - **Duración:** 2 segundos.
 - **Diseño:** Minimalista, para captar la atención del usuario.
-![splash](gif/splash.gif)
+![splash.gif](gif%2Fsplash.gif)
 ---
 
 ## **MainLogin**
@@ -40,7 +40,7 @@ El **MainLogin** permite al usuario iniciar sesión con un diseño moderno y fun
 - **Botones:**
     - "Login" redirige al usuario al **MainVista**.
     - "Sign Up" redirige a **SignUp**.
-![Login](img/login.png)
+![login.png](img%2Flogin.png)
 ---
 
 ## **SignUp**
@@ -53,7 +53,7 @@ El **SignUp** utiliza un diseño similar al de **MainLogin**, con ajustes para o
 - **Botones:**
     - "Registrar" para completar el registro.
     - "Cancelar" para volver a **MainLogin**.
-![singUp](img/singUp.png)
+![singUp.png](img%2FsingUp.png)
 ---
 
 ## **MainVista**
@@ -73,7 +73,7 @@ El **MainVista** es la pantalla principal de la aplicación, diseñada para ofre
 ### **Contenido principal**
 - **WebView:** Carga imágenes desde Internet.
 - **SwipeRefreshLayout:** Permite al usuario actualizar el contenido del WebView deslizando hacia abajo.
-![Main vista](gif/navegacion.mp4)
+- [navegacion.mp4](gif%2Fnavegacion.mp4)
 ---
 
 ## **MainButtonBar**
@@ -84,7 +84,7 @@ El **MainButtonBar** es la barra de navegación de la aplicación para acceder a
 - Inicio (**FragmentInicio**)
 - Favoritos (**FragmentFavoritos**)
 - Configuración (**FragmentSettings**)
-![botton bar](bottonBar.png)
+![bottonBar.png](img%2FbottonBar.png)
 ---
 
 ## **FragmentInicio**
